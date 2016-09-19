@@ -1296,7 +1296,7 @@ https://telegram.me/sscapachebot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot191356112:AAGIw24BTbFAEfbnY3ggLIKTW54OMoB35FY/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot193601257:AAEReOI-cvWmY_bH0j2taLsLw9TXBoQ-f4c/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
